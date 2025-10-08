@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1B424EE42E961A8B00B4C947 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1B424EE32E961A8800B4C947 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1B424EA12E96143000B4C947 /* HatchVideoFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HatchVideoFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B424EE32E961A8800B4C947 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		1B424E982E96143000B4C947 = {
 			isa = PBXGroup;
 			children = (
+				1B424EE32E961A8800B4C947 /* .gitignore */,
 				1B424EA32E96143000B4C947 /* HatchVideoFeed */,
 				1B424EA22E96143000B4C947 /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B424EE42E961A8B00B4C947 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
