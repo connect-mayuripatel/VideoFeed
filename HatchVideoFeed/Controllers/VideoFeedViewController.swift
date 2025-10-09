@@ -77,6 +77,8 @@ class VideoFeedViewController: UIViewController, UICollectionViewDelegate, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCell.identifier, for: indexPath) as! VideoCell
         cell.configure(with: infiniteVideos[indexPath.item].url)
+        cell.inputBarView.delegate = self
+        cell.inputBarView.parentCell = cell
         cell.layoutIfNeeded() // Ensures layer ready
         return cell
     }
@@ -187,4 +189,25 @@ class VideoFeedViewController: UIViewController, UICollectionViewDelegate, UICol
             }
         }
     }
+}
+
+extension VideoFeedViewController : InputBarViewDelegate {
+   
+    func didTapSend(text: String, cell: UICollectionViewCell) {
+        
+    }
+    
+    func didChangeText(cell: UICollectionViewCell, text: String) {
+        
+    }
+    
+    func didBeginEditing(cell: UICollectionViewCell) {
+        collectionView.isScrollEnabled = false
+    }
+    
+    func didEndEditing(cell: UICollectionViewCell) {
+        collectionView.isScrollEnabled = true
+    }
+    
+    
 }
