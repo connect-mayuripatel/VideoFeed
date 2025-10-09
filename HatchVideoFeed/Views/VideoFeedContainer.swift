@@ -10,10 +10,15 @@ import UIKit
 
 struct VideoFeedContainer: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> some UIViewController {
-        return VideoFeedViewController()
+        let vc = VideoFeedViewController()
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        
+        return vc
     }
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
         //Add logic to update controller here
     }
+    
 }
