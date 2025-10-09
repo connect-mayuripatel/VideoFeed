@@ -9,10 +9,16 @@ import SwiftUI
 
 @main
 struct HatchVideoFeedApp: App {
+    @State private var showFeed = false
+    
     var body: some Scene {
         WindowGroup {
-            VideoFeedContainer()
-                .edgesIgnoringSafeArea(.all)
+            if showFeed {
+                VideoFeedContainer()
+                    .ignoresSafeArea()
+            } else {
+                SplashView(showFeed: $showFeed)
+            }
         }
     }
 }
