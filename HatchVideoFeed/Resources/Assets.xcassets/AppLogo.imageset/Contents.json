@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Hatch-Logo-Over1.5-1c-Black-320w.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Hatch-Logo-Over1.5-1c-Black-320w@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Hatch-Logo-Over1.5-1c-Black-320w@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
